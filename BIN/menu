@@ -13,12 +13,15 @@ function SEARCH {
 echo "SEARCH button pressed....."
 BIN/target $DLIST
 }
-export -f CFG SEARCH
+function SCAN {
+BIN/scan $PDIR/hosts.list $PDIR/templates.list
+}
+export -f CFG SEARCH SCAN
 
 ############################################
 ########--> Paned Main Menu<--##############
 #--><--
-yad --plug=$$ --tabnum=1 --align=left --form --field="MODULES":lbl --field="ListMaker":fbtn  --field="Searcher":fbtn --field="Scanner":fbtn \ "" "bash -c CFG" "bash -c SEARCH" | \
+yad --plug=$$ --tabnum=1 --align=left --form --field="MODULES":lbl --field="ListMaker":fbtn  --field="Searcher":fbtn --field="Scanner":fbtn \ "" "bash -c CFG" "bash -c SEARCH" "bash -c SCAN" | \
 
 
 #--><--
@@ -26,6 +29,6 @@ yad --plug=$$ --tabnum=2 --align=center --columns=2 --form --text="Xploit Enumer
 
 
 
-yad --button="SYNC":0 --geometry=800x400+200+200 --borders=30 --separator="," --paned --splitter=450 --orient=hor --key=$$
+yad --button="KILL":252 --button="SYNC":0 --geometry=800x400+200+200 --borders=30 --separator="," --paned --splitter=450 --orient=hor --key=$$
 
-X=$(( $X + 1 ))
+

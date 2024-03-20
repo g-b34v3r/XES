@@ -1,25 +1,57 @@
 #!/bin/bash
 #
-# Searcher: <dorklist> <API's> <Rate>
-
+#
 
 ############################################# --print-all --editable-cols=
 ################-->GUI<--#################### --grid-lines=vert
-echo fuck $PDIR $DLIST $TLIST
 
-yad --plug=$$ --tabnum=1 --separator="," --list --print-all --editable --column="LOAD":chk --column=:text < $PDIR/dorks.list |grep TRUE|csvtool col 2 -|tee tmpd | \
+yad --plug=$$ --tabnum=1 --separator="," --list --print-all --editable --column="LOAD":chk --column=:text < $PDIR/dorks.list |tee .tmp/tmpd| \
 
-yad --plug=$$ --tabnum=2 --columns=1 --form --field="API Config":lbl --field="Rate":scl 1..99\!10\!10 --field="Zoomeye":chk --field="Leak IX":chk --field="Netlas":chk --field="Binary Edge":chk &
+yad --plug=$$ --tabnum=2 --separator="," --columns=1 --form --field="API Config":lbl --field="Rate":scl 1..99\!10\!10 --field="Zoomeye":chk --field="Leak IX":chk --field="Netlas":chk --field="Binary Edge":chk|tee .tmp/apicfg &
 
 yad --geometry=700x500+200-200 --borders=30 --align=center --text-align=center --paned --orient=hor --splitter=250 --key=$$
 
-JOBS=$(cat $PDIR/dorks.list|wc -l)
+function ZOOM {
+zoomeye search -type web -save=site,ip -num $QTY $DORK
+cat *.json|sed s/\'\/\"/g|jq .|sed s/\"//g|grep ip:|sed s/ip:\ \//g|sed s/,//g|sed s/\ \//g|httprobe|tee -a $PDIR/hosts.list
+cat *.json|sed s/\'\/\"/g|jq .|sed s/\"//g|grep site:|sed s/\ site\:\ \//g|sed s/,//g|httprobe|tee -a $PDIR/hosts.list
+}
+function LEAK {
+curl -H 'api-key: ZtYPiRNSoxEe3GdXMqXZwTyv6EZNsflrTO35LpvZpwNeWzwz' -H 'accept: application/json' "https://leakix.net/search?scope=service&page=3&q=$DORK"|tee leak.json;$XX
+cat leak.json|jq .|sed s/\"//g|grep ip:|sed s/\ip://g|sed s/geo\ {//g|sed s/,//g|sed s/\ \//g|httprobe|tee -a $TLIST $LDB
+rm -rf leak.json
+}
+function EDGE {
+binaryedge search -p $QTY $DORK|tee edge.json
+cat edge.json|jq .|sed s/\"//g|grep ip:|sed s/\ip://g|sed s/,//g|sed s/\ \//g|httprobe|tee -a $PDIR/hosts.list
+rm -rf edge.json
+}
+function NETLAS {
+netlas search -f json -p 2 $DORK|tee -a netlas.json
+cat netlas.json|jq '.items[].data.domain'|sed s/\"\//g|sed s/\ \//g|sed s/,//g|sed s/]//g|sed "s/\[//g"|sed '/^$/d'|httprobe|tee -a $PDIR/hosts.list
+}
+QTY=$(csvtool col 2 .tmp/apicfg)
+
+
+
+
+
+
+cat .tmp/tmpd|grep TRUE|csvtool col 2 -|tee -a .tmp/dlist
+JOBS=$(cat .tmp/dlist|wc -l)
 (
 for ((i=0; i<=$JOBS; i++))
 do
-  echo $((i*100/JOBS)) # Update the progress bar
-  echo "# Task $i of $JOBS" # Update the text above the progress bar
-  sleep 1 # Simulate a task with a sleep command
+  echo $((i*100/JOBS)) 			# Update the progress bar
+  echo "# Task $i of $JOBS" 		# Update the text above the progress bar
+  while IFS= read -r DORK
+  do
+    echo $DORK
+    ZOOM
+    EDGE
+    LEAK
+    NETLAS  				# Simulate a task with a sleep command
+  done < .tmp/dlist
 done
 ) | yad --progress --title="Progress" --text="Starting tasks..." --percentage=0 --auto-close --auto-kill
 yad --title="Progress" --text="All tasks completed"
