@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#
+PDIR=$1
+TCNT=$(cat $PDIR/templates.list|wc -l)
+DCNT=$(cat $PDIR/dorks.list|wc -l)
+HCNT=$(cat $PDIR/hosts.list|wc -l)
+function CFG {
+echo "CFG button pressed...."
+BIN/lm $PDIR/templates.list $PDIR/dorks.list
+}
+function SEARCH {
+echo "SEARCH button pressed....."
+BIN/target $DLIST
+}
+export -f CFG SEARCH
+
+############################################
+########--> Paned Main Menu<--##############
+#--><--
+yad --plug=$$ --tabnum=1 --align=left --form --field="MODULES":lbl --field="ListMaker":fbtn  --field="Searcher":fbtn --field="Scanner":fbtn \ "" "bash -c CFG" "bash -c SEARCH" | \
+
+
+#--><--
+yad --plug=$$ --tabnum=2 --align=center --columns=2 --form --text="Xploit Enumeration System" --field="Project":cdir --field="Lists":lbl --field="Templates":fl --field="Dorks":fl --field="Hosts":fl --field="Activated":lbl --field="Templates: $TCNT":lbl --field="Dorks: $DCNT":lbl --field="Hosts: $HCNT":lbl \ "$PDIR/" "$PDIR/" "$PDIR/templates.list" "$PDIR/dorks.list" "$PDIR/hosts.list" &
+
+
+
+yad --button="SYNC":0 --geometry=800x400+200+200 --borders=30 --separator="," --paned --splitter=450 --orient=hor --key=$$
+
+X=$(( $X + 1 ))

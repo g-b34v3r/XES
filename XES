@@ -1,0 +1,35 @@
+#!/bin/bash
+#
+#
+
+
+
+
+
+
+
+########--> Initiate Project
+BIN/init
+PRJ=$(csvtool col 2 .tmp/init)
+NEW=$(csvtool col 4 .tmp/init)
+if [ -z $NEW ]
+then
+    unset $NEW
+    export PDIR=$PRJ
+else
+    mkdir $NEW
+    PJWD=$(pwd)/$NEW
+    cp .config.cfg $NEW/$NEW.cfg
+    export PDIR=$PJWD
+    echo "........>$PDIR<......."
+    touch $PDIR/dorks.list $PDIR/templates.list $PDIR/hosts.list
+    echo >> $PDIR/*.cfg "ProjectDir=$PDIR"
+fi
+X=0
+until [ $X == 1 ]
+do
+  BIN/menu $PDIR
+  
+done
+
+

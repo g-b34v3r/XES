@@ -1,0 +1,58 @@
+#!/bin/bash
+#
+export TLIST=$1
+export DLIST=$2
+
+
+
+yad --separator="," --title="ListMaker3000" --form --field="Template Settings:":lbl --field="Severity":cb --field="Directory":dir --field="Tag1": --field="Tag2": \
+--field="DorkParser Setting:":lbl --field="Keywords":lbl --field="name":chk --field="product":chk --field="vendor":chk --field="Modifiers":lbl --field="http.title:[D]":chk --field="http.server:[D]":chk --field="powered.by:[D]":chk \ "" "unknown\!critical\!high\!medium\!low\!info" "/root/nuclei-templates/" |tee tmp 
+
+
+
+SVR=$(csvtool col 2 tmp)
+DIR=$(csvtool col 3 tmp)
+T1=$(csvtool col 4 tmp)
+if [ -z $T1 ]
+then
+    unset $T1
+else
+    TG1="-tags $T1"
+fi
+echo >> $PDIR/*.cfg "severity=$SVR"
+echo >> $PDIR/*.cfg "tmpltDir=$DIR"
+echo >> $PDIR/*.cfg "tag1=$T1"
+nuclei -nc -silent -tl -severity $SVR -t $DIR $TG1 |tee $TLIST
+
+T2=$(csvtool col 5 tmp)
+if [ -z $T2 ]
+then
+    unset $T2
+else
+    echo >> $PDIR/*.cfg "tag2=$T2"
+    nuclei -nc -silent -tl -t $TLIST -tags $T2|tee $TLIST
+fi
+
+NM=$(csvtool col 8 tmp)
+if [ $NM == FALSE ]
+then
+    unset $NM
+else
+    KWORD="name"
+fi
+PRD=$(csvtool col 9 tmp)
+if [ $PRD == FALSE ]
+then
+    unset $PRD
+else
+    KWORD="product"
+fi
+VEN=$(csvtool col 10 tmp)
+if [ $VEN == FALSE ]
+then
+    unset $VEN
+else
+    KWORD="vendor"
+fi
+nuclei -nc -silent -td -t $TLIST|grep $KWORD|sed s/"$KWORD"://g|sed s/\ \//g|tee -a $DLIST
+

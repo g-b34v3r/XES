@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+#
+
+
+yad --title="Project Manager" --geometry=600x100-200+200 --borders=30 --align=center --columns=2 --orient=hor --separator="," --form --field="Load Project":lbl --field="Directory:DIR" --field="New Project:lbl" --field="Name:" | tee .tmp/init
+

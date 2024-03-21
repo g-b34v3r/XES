@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Searcher: <dorklist> <API's> <Rate>
+
+
+############################################# --print-all --editable-cols=
+################-->GUI<--#################### --grid-lines=vert
+echo fuck $PDIR $DLIST $TLIST
+
+yad --plug=$$ --tabnum=1 --separator="," --list --print-all --editable --column="LOAD":chk --column=:text < $PDIR/dorks.list |grep TRUE|csvtool col 2 -|tee tmpd | \
+
+yad --plug=$$ --tabnum=2 --columns=1 --form --field="API Config":lbl --field="Rate":scl 1..99\!10\!10 --field="Zoomeye":chk --field="Leak IX":chk --field="Netlas":chk --field="Binary Edge":chk &
+
+yad --geometry=700x500+200-200 --borders=30 --align=center --text-align=center --paned --orient=hor --splitter=250 --key=$$
+
+JOBS=$(cat $PDIR/dorks.list|wc -l)
+(
+for ((i=0; i<=$JOBS; i++))
+do
+  echo $((i*100/JOBS)) # Update the progress bar
+  echo "# Task $i of $JOBS" # Update the text above the progress bar
+  sleep 1 # Simulate a task with a sleep command
+done
+) | yad --progress --title="Progress" --text="Starting tasks..." --percentage=0 --auto-close --auto-kill
+yad --title="Progress" --text="All tasks completed"
